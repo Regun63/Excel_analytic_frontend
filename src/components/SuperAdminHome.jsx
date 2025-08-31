@@ -21,7 +21,7 @@ const SuperAdminHome = () => {
   const [admins, setAdmins] = useState([]);
   const [processingId, setProcessingId] = useState(null);
   const dispatch = useDispatch();
-    const BACKEND_URL = import.meta.env.VITE_BACKEND||'http://localhost:8000';
+    const BACKEND_URL = import.meta.env.VITE_BACKEND;
   const [stats, setStats] = useState({
     totalUsers: 0,
     adminCount: 0,

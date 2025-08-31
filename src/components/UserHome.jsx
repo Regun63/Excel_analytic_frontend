@@ -16,7 +16,7 @@ const UserHome = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [activeUploadId, setActiveUploadId] = useState(null);
-    const BACKEND_URL = import.meta.env.VITE_BACKEND||'http://localhost:8000';
+    const BACKEND_URL = import.meta.env.VITE_BACKEND;
   useEffect(() => {
     
       toast.success(`Welcome back ${users?.username}`, {

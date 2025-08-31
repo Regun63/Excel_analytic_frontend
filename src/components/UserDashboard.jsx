@@ -45,7 +45,7 @@ const StatCard = ({ label, value, icon }) => {
 const UserDashboard = () => {
   const { users, uploads } = useSelector((state) => state.author);
   const dispatch = useDispatch();
-    const BACKEND_URL = import.meta.env.VITE_BACKEND||'http://localhost:8000';
+    const BACKEND_URL = import.meta.env.VITE_BACKEND;
   const getChartIcon = (type) => {
     switch (type.toLowerCase()) {
       case 'bar': return <FaChartBar className="text-blue-400" />;

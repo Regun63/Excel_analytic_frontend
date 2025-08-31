@@ -15,7 +15,7 @@ const Login = () => {
   const [loginMode, setLoginMode] = useState("user"); 
   const navigate = useNavigate();
   const { users } = useSelector(store => store.author);
-    const BACKEND_URL = import.meta.env.VITE_BACKEND||'http://localhost:8000';
+    const BACKEND_URL = import.meta.env.VITE_BACKEND;
   const onChangeHandler = (e) => {
     setInput({ ...input, [e.target.name]: e.target.value });
   };
