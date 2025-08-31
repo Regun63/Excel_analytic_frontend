@@ -13,7 +13,7 @@ const EditUser = () => {
     const dispatch = useDispatch();
     const [loading, setLoading] = useState(false);
     const navigate = useNavigate();
-        const BACKEND_URL = import.meta.env.VITE_BACKEND;
+        const BACKEND_URL = import.meta.env.VITE_BACKEND||'http://localhost:8000';
     const [input, setInput] = useState({
         profilePicture: null, 
         email: users?.email || '',

@@ -7,7 +7,7 @@ import {FaTrashAlt} from 'react-icons/fa';
 const AdminHome = () => {
   const { allusers } = useSelector((state) => state.author);
     const dispatch = useDispatch();
-    const BACKEND_URL = import.meta.env.VITE_BACKEND;
+    const BACKEND_URL = import.meta.env.VITE_BACKEND||'http://localhost:8000';
   useEffect(() => {
 
       toast.success(`Welcome back Admin`, {

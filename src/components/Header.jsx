@@ -10,7 +10,7 @@ const Header = () => {
   const location = useLocation();
   const { users } = useSelector(store => store.author);
   const dispatch=useDispatch();
-    const BACKEND_URL = import.meta.env.VITE_BACKEND;
+    const BACKEND_URL = import.meta.env.VITE_BACKEND||'http://localhost:8000';
   const logoutHandler = async () => {
     try {
       const res = await axios.get(`${BACKEND_URL}/api/excel/user/logout`, {

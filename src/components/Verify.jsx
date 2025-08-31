@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 const Verify = () => {
   const navigate = useNavigate();
   const [input, setInput] = useState("");
-    const BACKEND_URL = import.meta.env.VITE_BACKEND;
+    const BACKEND_URL = import.meta.env.VITE_BACKEND||'http://localhost:8000';
   const onChangeHandler = (e) => {
     setInput(e.target.value);
   };

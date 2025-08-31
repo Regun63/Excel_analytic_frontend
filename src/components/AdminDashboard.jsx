@@ -27,7 +27,7 @@ const AdminDashboard = () => {
     adminCount: 0,
     filesUploaded: 0,
   });
-    const BACKEND_URL = import.meta.env.VITE_BACKEND;
+    const BACKEND_URL = import.meta.env.VITE_BACKEND||'http://localhost:8000';
   const [uploads, setUploads] = useState([]); // store uploaded files separately
 
   const fetchAllUsers = async () => {

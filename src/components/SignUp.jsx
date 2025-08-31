@@ -17,7 +17,7 @@ const SignUp = () => {
   const { users } = useSelector((store) => store.author);
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
-    const BACKEND_URL = import.meta.env.VITE_BACKEND;
+    const BACKEND_URL = import.meta.env.VITE_BACKEND ||'http://localhost:8000';
   const onChangeHandler = (e) => {
     const { name, value, type, checked } = e.target;
 
