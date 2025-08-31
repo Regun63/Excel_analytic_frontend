@@ -4,10 +4,7 @@ import Modal from '@mui/material/Modal';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import MenuItem from '@mui/material/MenuItem';
-import Bar from './Bar'
-import Line from './Line'
-import Scatter from './Scatter'
-import Pie from './Pie'
+
 
 const style = {
   position: 'absolute',
